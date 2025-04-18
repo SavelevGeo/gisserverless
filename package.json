@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@quasar/extras": "^1.16.17",
     "ol": "^10.5.0",
     "ol-contextmenu": "^5.5.0",
     "ol-ext": "^4.0.30",
+    "quasar": "^2.18.1",
     "vue": "^3.5.13",
     "vue3-openlayers": "^11.5.0"
   },

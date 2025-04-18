@@ -12,14 +12,14 @@ const vectorUrl: Ref<string> = ref("pbf/spb_2/{z}/{x}/{y}.pbf");
   <ol-map
     :loadTilesWhileAnimating="true"
     :loadTilesWhileInteracting="true"
-    style="min-width: 100vw; height: 100vh"
+    id="main_map"
   >
     <ol-view :center="[3375000, 8380000]" :zoom="11" />
 
     <ol-tile-layer :opacity="0.5">
       <ol-source-osm />
     </ol-tile-layer>
-    
+
     <ol-tile-layer>
       <ol-source-xyz :url="rasterUrl" />
     </ol-tile-layer>
@@ -30,3 +30,14 @@ const vectorUrl: Ref<string> = ref("pbf/spb_2/{z}/{x}/{y}.pbf");
     </ol-vector-tile-layer>
   </ol-map>
 </template>
+
+<style scoped>
+#main_map {
+  height: 100%;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+
+  overflow: hidden;
+}
+
+</style>
