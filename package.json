@@ -16,8 +16,10 @@
     "vue3-openlayers": "^11.5.0"
   },
   "devDependencies": {
+    "@quasar/vite-plugin": "^1.9.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "sass-embedded": "^1.86.3",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
     "vue-tsc": "^2.2.4"
